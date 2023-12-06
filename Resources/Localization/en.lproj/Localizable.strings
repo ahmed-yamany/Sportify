@@ -1,0 +1,37 @@
+/* 
+  Localizable.strings
+  Sportify
+
+  Created by Ahmed Yamany on 05/12/2023.
+  
+*/
+
+"app.name" = "sportify";
+//
+"splash.title" = "keep an eye on the stadium";
+"splash.subtitle" = "Watch sports live or highlights, read every news from your smartphone";
+//
+"Login.title" = "Login";
+"Login.header.title" = "sIGN IN WITH YOUR SPORTIFY ID";
+"Login.header.subtitle" = "";
+"Login.header.overlayTitle" = "Sign in";
+"Login.textfield.email" = "Email";
+"Login.textfield.password" = "Password";
+"Login.forgotPassword" = "Forgot password?";
+"Login.or" = "or";
+"Login.instructions" = "Your Sportify account is now Sportify ID. If you’ve signed into the app before, use the same credentials here. otherwise";
+//
+"signup.title" = "Create Account";
+"signup.header.title" = "Create your sportify id";
+"signup.header.subtitle" = "Get news,game updates highlights and more info on your favorite teams";
+"signup.header.overlayTitle" = "Join";
+"signup.textfield.firstname" = "First Name";
+"signup.textfield.lastname" = "Last Name";
+"signup.textfield.email" = "Email";
+"signup.textfield.password" = "Password";
+"signup.textfield.password.instructions" = "Password must be at least 8 character long and include 1 capital letter and 1 symbol";
+"signup.terms.text" = "I agree to the";
+"signup.terms.terms" = "Terms";
+"signup.terms.privacy" = "Privacy Policy";
+"signup.terms.instructions" = "By agreeing to the above terms, you are consenting that your personal information will be collected, stored, and processed in the United States and the European Union on behalf of Sporify Properties, Inc.";
+

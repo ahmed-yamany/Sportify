@@ -3,27 +3,64 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE31F6582B1F736A0055E9BC /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE31F6562B1F736A0055E9BC /* SignupView.swift */; };
+		EE31F6592B1F736A0055E9BC /* SignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE31F6572B1F736A0055E9BC /* SignupViewModel.swift */; };
+		EE31F65B2B1F82610055E9BC /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE31F65A2B1F82610055E9BC /* OnboardingView.swift */; };
+		EE31F65F2B1F88E10055E9BC /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE31F65D2B1F88E10055E9BC /* LoginView.swift */; };
+		EE31F6602B1F88E10055E9BC /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE31F65E2B1F88E10055E9BC /* LoginViewModel.swift */; };
 		EE92973E2B1F2A2A00877512 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE92973D2B1F2A2A00877512 /* AppDelegate.swift */; };
 		EE9297402B1F2A2A00877512 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE92973F2B1F2A2A00877512 /* SceneDelegate.swift */; };
-		EE9297422B1F2A2A00877512 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9297412B1F2A2A00877512 /* ViewController.swift */; };
-		EE9297452B1F2A2A00877512 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE9297432B1F2A2A00877512 /* Main.storyboard */; };
 		EE9297472B1F2A2C00877512 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE9297462B1F2A2C00877512 /* Assets.xcassets */; };
 		EE92974A2B1F2A2C00877512 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE9297482B1F2A2C00877512 /* LaunchScreen.storyboard */; };
+		EE9297522B1F31B500877512 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = EE9297512B1F31B500877512 /* .swiftlint.yml */; };
+		EE92975A2B1F349C00877512 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE9297592B1F349C00877512 /* Colors.xcassets */; };
+		EE9297602B1F34E500877512 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EE9297622B1F34E500877512 /* Localizable.strings */; };
+		EE9297652B1F34F500877512 /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = EE9297642B1F34F500877512 /* swiftgen.yml */; };
+		EE9297682B1F358A00877512 /* Strings+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9297672B1F358A00877512 /* Strings+Generated.swift */; };
+		EE92976D2B1F365300877512 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE92976B2B1F365300877512 /* SplashView.swift */; };
+		EE9297732B1F378800877512 /* UIFont+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9297722B1F378800877512 /* UIFont+Style.swift */; };
+		EE9297802B1F416700877512 /* RobotoCondensed.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EE92977F2B1F416700877512 /* RobotoCondensed.ttf */; };
+		EE9297832B1F481500877512 /* SPContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9297822B1F481500877512 /* SPContainerView.swift */; };
+		EE9297852B1F4A9400877512 /* SPLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9297842B1F4A9400877512 /* SPLogo.swift */; };
+		EE9297882B1F4F2000877512 /* Spacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9297872B1F4F2000877512 /* Spacing.swift */; };
+		EE92978A2B1F5F2000877512 /* SPShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9297892B1F5F2000877512 /* SPShape.swift */; };
+		EE92978C2B1F5F3900877512 /* SPButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE92978B2B1F5F3900877512 /* SPButton.swift */; };
+		EE9297922B1F63F400877512 /* Extensions in Frameworks */ = {isa = PBXBuildFile; productRef = EE9297912B1F63F400877512 /* Extensions */; };
+		EEB535982B2052D800B158D6 /* SPTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB535972B2052D800B158D6 /* SPTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EE31F6562B1F736A0055E9BC /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
+		EE31F6572B1F736A0055E9BC /* SignupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewModel.swift; sourceTree = "<group>"; };
+		EE31F65A2B1F82610055E9BC /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		EE31F65D2B1F88E10055E9BC /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		EE31F65E2B1F88E10055E9BC /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		EE92973A2B1F2A2A00877512 /* Sportify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sportify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE92973D2B1F2A2A00877512 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE92973F2B1F2A2A00877512 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EE9297412B1F2A2A00877512 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EE9297442B1F2A2A00877512 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EE9297462B1F2A2C00877512 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE9297492B1F2A2C00877512 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE92974B2B1F2A2C00877512 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE9297512B1F31B500877512 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		EE9297592B1F349C00877512 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		EE92975F2B1F34DE00877512 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		EE9297612B1F34E500877512 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		EE9297632B1F34E600877512 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		EE9297642B1F34F500877512 /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
+		EE9297672B1F358A00877512 /* Strings+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Strings+Generated.swift"; sourceTree = "<group>"; };
+		EE92976B2B1F365300877512 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		EE9297722B1F378800877512 /* UIFont+Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Style.swift"; sourceTree = "<group>"; };
+		EE92977F2B1F416700877512 /* RobotoCondensed.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = RobotoCondensed.ttf; sourceTree = "<group>"; };
+		EE9297822B1F481500877512 /* SPContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPContainerView.swift; sourceTree = "<group>"; };
+		EE9297842B1F4A9400877512 /* SPLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPLogo.swift; sourceTree = "<group>"; };
+		EE9297872B1F4F2000877512 /* Spacing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spacing.swift; sourceTree = "<group>"; };
+		EE9297892B1F5F2000877512 /* SPShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPShape.swift; sourceTree = "<group>"; };
+		EE92978B2B1F5F3900877512 /* SPButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPButton.swift; sourceTree = "<group>"; };
+		EEB535972B2052D800B158D6 /* SPTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,16 +68,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE9297922B1F63F400877512 /* Extensions in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EE31F6552B1F70070055E9BC /* Signup */ = {
+			isa = PBXGroup;
+			children = (
+				EE31F6562B1F736A0055E9BC /* SignupView.swift */,
+				EE31F6572B1F736A0055E9BC /* SignupViewModel.swift */,
+			);
+			path = Signup;
+			sourceTree = "<group>";
+		};
+		EE31F65C2B1F88C70055E9BC /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				EE31F65D2B1F88E10055E9BC /* LoginView.swift */,
+				EE31F65E2B1F88E10055E9BC /* LoginViewModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		EE9297312B1F2A2A00877512 = {
 			isa = PBXGroup;
 			children = (
+				EE9297642B1F34F500877512 /* swiftgen.yml */,
+				EE9297512B1F31B500877512 /* .swiftlint.yml */,
 				EE92973C2B1F2A2A00877512 /* Sportify */,
+				EE9297542B1F343E00877512 /* Utilities */,
+				EE9297552B1F344400877512 /* Resources */,
 				EE92973B2B1F2A2A00877512 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,15 +116,114 @@
 		EE92973C2B1F2A2A00877512 /* Sportify */ = {
 			isa = PBXGroup;
 			children = (
+				EE9297562B1F347200877512 /* Scenes */,
 				EE92973D2B1F2A2A00877512 /* AppDelegate.swift */,
 				EE92973F2B1F2A2A00877512 /* SceneDelegate.swift */,
-				EE9297412B1F2A2A00877512 /* ViewController.swift */,
-				EE9297432B1F2A2A00877512 /* Main.storyboard */,
-				EE9297462B1F2A2C00877512 /* Assets.xcassets */,
 				EE9297482B1F2A2C00877512 /* LaunchScreen.storyboard */,
 				EE92974B2B1F2A2C00877512 /* Info.plist */,
 			);
 			path = Sportify;
+			sourceTree = "<group>";
+		};
+		EE9297542B1F343E00877512 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				EE9297862B1F4F1300877512 /* Constants */,
+				EE9297812B1F478000877512 /* Custom Views */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		EE9297552B1F344400877512 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EE92976F2B1F375A00877512 /* Fonts */,
+				EE9297572B1F348B00877512 /* Assets */,
+				EE92975B2B1F34B400877512 /* Generated */,
+				EE92975C2B1F34C000877512 /* Localization */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EE9297562B1F347200877512 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				EE9297692B1F360800877512 /* Onboarding */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		EE9297572B1F348B00877512 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				EE9297462B1F2A2C00877512 /* Assets.xcassets */,
+				EE9297592B1F349C00877512 /* Colors.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		EE92975B2B1F34B400877512 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				EE9297672B1F358A00877512 /* Strings+Generated.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
+		EE92975C2B1F34C000877512 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				EE9297622B1F34E500877512 /* Localizable.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		EE9297692B1F360800877512 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				EE31F65A2B1F82610055E9BC /* OnboardingView.swift */,
+				EE92976A2B1F362F00877512 /* Splash */,
+				EE31F6552B1F70070055E9BC /* Signup */,
+				EE31F65C2B1F88C70055E9BC /* Login */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		EE92976A2B1F362F00877512 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				EE92976B2B1F365300877512 /* SplashView.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		EE92976F2B1F375A00877512 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				EE92977F2B1F416700877512 /* RobotoCondensed.ttf */,
+				EE9297722B1F378800877512 /* UIFont+Style.swift */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		EE9297812B1F478000877512 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				EE9297822B1F481500877512 /* SPContainerView.swift */,
+				EE9297842B1F4A9400877512 /* SPLogo.swift */,
+				EE9297892B1F5F2000877512 /* SPShape.swift */,
+				EE92978B2B1F5F3900877512 /* SPButton.swift */,
+				EEB535972B2052D800B158D6 /* SPTextField.swift */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		EE9297862B1F4F1300877512 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				EE9297872B1F4F2000877512 /* Spacing.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +233,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EE92974E2B1F2A2C00877512 /* Build configuration list for PBXNativeTarget "Sportify" */;
 			buildPhases = (
+				EE9297532B1F31D300877512 /* swiftlint */,
+				EE9297662B1F351300877512 /* swiftgen */,
 				EE9297362B1F2A2A00877512 /* Sources */,
 				EE9297372B1F2A2A00877512 /* Frameworks */,
 				EE9297382B1F2A2A00877512 /* Resources */,
@@ -83,6 +244,9 @@
 			dependencies = (
 			);
 			name = Sportify;
+			packageProductDependencies = (
+				EE9297912B1F63F400877512 /* Extensions */,
+			);
 			productName = Sportify;
 			productReference = EE92973A2B1F2A2A00877512 /* Sportify.app */;
 			productType = "com.apple.product-type.application";
@@ -109,8 +273,12 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
 			);
 			mainGroup = EE9297312B1F2A2A00877512;
+			packageReferences = (
+				EE9297902B1F63F300877512 /* XCLocalSwiftPackageReference "Packages/Extensions" */,
+			);
 			productRefGroup = EE92973B2B1F2A2A00877512 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,42 +293,102 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE9297602B1F34E500877512 /* Localizable.strings in Resources */,
+				EE9297802B1F416700877512 /* RobotoCondensed.ttf in Resources */,
+				EE9297522B1F31B500877512 /* .swiftlint.yml in Resources */,
+				EE92975A2B1F349C00877512 /* Colors.xcassets in Resources */,
 				EE92974A2B1F2A2C00877512 /* LaunchScreen.storyboard in Resources */,
 				EE9297472B1F2A2C00877512 /* Assets.xcassets in Resources */,
-				EE9297452B1F2A2A00877512 /* Main.storyboard in Resources */,
+				EE9297652B1F34F500877512 /* swiftgen.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EE9297532B1F31D300877512 /* swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi \n";
+		};
+		EE9297662B1F351300877512 /* swiftgen */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = swiftgen;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nexport PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftgen >/dev/null; then\n  swiftgen\nelse\n  echo \"warning: get not installed, download from https://github.com/realm/SwiftLint\"\nfi \n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EE9297362B1F2A2A00877512 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE9297422B1F2A2A00877512 /* ViewController.swift in Sources */,
+				EE92978C2B1F5F3900877512 /* SPButton.swift in Sources */,
 				EE92973E2B1F2A2A00877512 /* AppDelegate.swift in Sources */,
+				EE92978A2B1F5F2000877512 /* SPShape.swift in Sources */,
+				EE9297882B1F4F2000877512 /* Spacing.swift in Sources */,
+				EE9297682B1F358A00877512 /* Strings+Generated.swift in Sources */,
+				EE9297852B1F4A9400877512 /* SPLogo.swift in Sources */,
+				EE31F6592B1F736A0055E9BC /* SignupViewModel.swift in Sources */,
+				EE9297732B1F378800877512 /* UIFont+Style.swift in Sources */,
+				EEB535982B2052D800B158D6 /* SPTextField.swift in Sources */,
+				EE31F6602B1F88E10055E9BC /* LoginViewModel.swift in Sources */,
+				EE31F65F2B1F88E10055E9BC /* LoginView.swift in Sources */,
+				EE92976D2B1F365300877512 /* SplashView.swift in Sources */,
 				EE9297402B1F2A2A00877512 /* SceneDelegate.swift in Sources */,
+				EE31F6582B1F736A0055E9BC /* SignupView.swift in Sources */,
+				EE31F65B2B1F82610055E9BC /* OnboardingView.swift in Sources */,
+				EE9297832B1F481500877512 /* SPContainerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		EE9297432B1F2A2A00877512 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EE9297442B1F2A2A00877512 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EE9297482B1F2A2C00877512 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				EE9297492B1F2A2C00877512 /* Base */,
+				EE92975F2B1F34DE00877512 /* ar */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		EE9297622B1F34E500877512 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE9297612B1F34E500877512 /* en */,
+				EE9297632B1F34E600877512 /* ar */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -171,6 +399,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -203,7 +432,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -234,6 +463,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -266,7 +496,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -297,9 +527,9 @@
 				INFOPLIST_FILE = Sportify/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -325,9 +555,9 @@
 				INFOPLIST_FILE = Sportify/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -363,6 +593,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		EE9297902B1F63F300877512 /* XCLocalSwiftPackageReference "Packages/Extensions" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/Extensions;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EE9297912B1F63F400877512 /* Extensions */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Extensions;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EE9297322B1F2A2A00877512 /* Project object */;
 }
