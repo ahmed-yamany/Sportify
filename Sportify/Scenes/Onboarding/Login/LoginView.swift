@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct LoginView: View {
+    let router: Router
+    
     @StateObject private var viewModel = LoginViewModel()
     
     var body: some View {
@@ -50,7 +52,9 @@ struct LoginView: View {
     }
     
     private var signinButton: some View {
-        SPButton(title: L10n.Login.Header.overlayTitle, type: .black) { }
+        SPButton(title: L10n.Login.Header.overlayTitle, type: .black) { 
+            router.dismiss()
+        }
     }
     
     private var instructionsText: some View {
@@ -58,12 +62,12 @@ struct LoginView: View {
     }
     
     private var signupButton: some View {
-        SPButton(title: L10n.Signup.Header.overlayTitle, type: .gray) { }
+        SPButton(title: L10n.Signup.Header.overlayTitle, type: .gray) { 
+            let signupView = SignupView(router: router)
+            let viewController = UIHostingController(rootView: signupView)
+            router.present(viewController)
+        }
     }
-}
-
-#Preview {
-    LoginView()
 }
 
 struct OnboardingInstructionsText: View {

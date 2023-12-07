@@ -12,6 +12,7 @@
 		EE31F65B2B1F82610055E9BC /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE31F65A2B1F82610055E9BC /* OnboardingView.swift */; };
 		EE31F65F2B1F88E10055E9BC /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE31F65D2B1F88E10055E9BC /* LoginView.swift */; };
 		EE31F6602B1F88E10055E9BC /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE31F65E2B1F88E10055E9BC /* LoginViewModel.swift */; };
+		EE3318F92B21FFCB004CE24F /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3318F82B21FFCB004CE24F /* Coordinator.swift */; };
 		EE92973E2B1F2A2A00877512 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE92973D2B1F2A2A00877512 /* AppDelegate.swift */; };
 		EE9297402B1F2A2A00877512 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE92973F2B1F2A2A00877512 /* SceneDelegate.swift */; };
 		EE9297472B1F2A2C00877512 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE9297462B1F2A2C00877512 /* Assets.xcassets */; };
@@ -31,6 +32,11 @@
 		EE92978C2B1F5F3900877512 /* SPButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE92978B2B1F5F3900877512 /* SPButton.swift */; };
 		EE9297922B1F63F400877512 /* Extensions in Frameworks */ = {isa = PBXBuildFile; productRef = EE9297912B1F63F400877512 /* Extensions */; };
 		EEB535982B2052D800B158D6 /* SPTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB535972B2052D800B158D6 /* SPTextField.swift */; };
+		EEB5359A2B20AEE200B158D6 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB535992B20AEE200B158D6 /* AppRouter.swift */; };
+		EEB5359C2B20C2F900B158D6 /* ModalRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB5359B2B20C2F900B158D6 /* ModalRouter.swift */; };
+		EEB5359F2B20C32800B158D6 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB5359E2B20C32800B158D6 /* Router.swift */; };
+		EEB535A12B20C38200B158D6 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB535A02B20C38200B158D6 /* AuthManager.swift */; };
+		EEB535A62B20DFE900B158D6 /* NavigationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB535A52B20DFE900B158D6 /* NavigationRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +45,7 @@
 		EE31F65A2B1F82610055E9BC /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		EE31F65D2B1F88E10055E9BC /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		EE31F65E2B1F88E10055E9BC /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		EE3318F82B21FFCB004CE24F /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		EE92973A2B1F2A2A00877512 /* Sportify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sportify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE92973D2B1F2A2A00877512 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE92973F2B1F2A2A00877512 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +68,11 @@
 		EE9297892B1F5F2000877512 /* SPShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPShape.swift; sourceTree = "<group>"; };
 		EE92978B2B1F5F3900877512 /* SPButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPButton.swift; sourceTree = "<group>"; };
 		EEB535972B2052D800B158D6 /* SPTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPTextField.swift; sourceTree = "<group>"; };
+		EEB535992B20AEE200B158D6 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		EEB5359B2B20C2F900B158D6 /* ModalRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalRouter.swift; sourceTree = "<group>"; };
+		EEB5359E2B20C32800B158D6 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		EEB535A02B20C38200B158D6 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		EEB535A52B20DFE900B158D6 /* NavigationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,9 +128,11 @@
 		EE92973C2B1F2A2A00877512 /* Sportify */ = {
 			isa = PBXGroup;
 			children = (
+				EEB535A22B20DBCE00B158D6 /* Router */,
 				EE9297562B1F347200877512 /* Scenes */,
 				EE92973D2B1F2A2A00877512 /* AppDelegate.swift */,
 				EE92973F2B1F2A2A00877512 /* SceneDelegate.swift */,
+				EEB535A02B20C38200B158D6 /* AuthManager.swift */,
 				EE9297482B1F2A2C00877512 /* LaunchScreen.storyboard */,
 				EE92974B2B1F2A2C00877512 /* Info.plist */,
 			);
@@ -224,6 +238,18 @@
 				EE9297872B1F4F2000877512 /* Spacing.swift */,
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		EEB535A22B20DBCE00B158D6 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				EEB5359E2B20C32800B158D6 /* Router.swift */,
+				EEB535992B20AEE200B158D6 /* AppRouter.swift */,
+				EEB5359B2B20C2F900B158D6 /* ModalRouter.swift */,
+				EEB535A52B20DFE900B158D6 /* NavigationRouter.swift */,
+				EE3318F82B21FFCB004CE24F /* Coordinator.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -352,12 +378,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE92978C2B1F5F3900877512 /* SPButton.swift in Sources */,
+				EEB5359C2B20C2F900B158D6 /* ModalRouter.swift in Sources */,
+				EE3318F92B21FFCB004CE24F /* Coordinator.swift in Sources */,
 				EE92973E2B1F2A2A00877512 /* AppDelegate.swift in Sources */,
 				EE92978A2B1F5F2000877512 /* SPShape.swift in Sources */,
 				EE9297882B1F4F2000877512 /* Spacing.swift in Sources */,
 				EE9297682B1F358A00877512 /* Strings+Generated.swift in Sources */,
+				EEB5359F2B20C32800B158D6 /* Router.swift in Sources */,
 				EE9297852B1F4A9400877512 /* SPLogo.swift in Sources */,
+				EEB535A62B20DFE900B158D6 /* NavigationRouter.swift in Sources */,
 				EE31F6592B1F736A0055E9BC /* SignupViewModel.swift in Sources */,
+				EEB535A12B20C38200B158D6 /* AuthManager.swift in Sources */,
 				EE9297732B1F378800877512 /* UIFont+Style.swift in Sources */,
 				EEB535982B2052D800B158D6 /* SPTextField.swift in Sources */,
 				EE31F6602B1F88E10055E9BC /* LoginViewModel.swift in Sources */,
@@ -366,6 +397,7 @@
 				EE9297402B1F2A2A00877512 /* SceneDelegate.swift in Sources */,
 				EE31F6582B1F736A0055E9BC /* SignupView.swift in Sources */,
 				EE31F65B2B1F82610055E9BC /* OnboardingView.swift in Sources */,
+				EEB5359A2B20AEE200B158D6 /* AppRouter.swift in Sources */,
 				EE9297832B1F481500877512 /* SPContainerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

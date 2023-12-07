@@ -9,6 +9,8 @@ import SwiftUI
 import Extensions
 
 struct SplashView: View {
+    let router: Router
+        
     var body: some View {
         SPContainerView {
             logoSection
@@ -46,13 +48,20 @@ struct SplashView: View {
     private var buttonsSection: some View {
         VStack(spacing: 8) {
             SPButton(title: L10n.Login.title) {
+                let loginView = LoginView(router: router)
+                let viewController = UIHostingController(rootView: loginView)
+                router.present(viewController)
             }
+            
             SPButton(title: L10n.Signup.title, type: .gray) {
+                let signupView = SignupView(router: router)
+                let viewController = UIHostingController(rootView: signupView)
+                router.present(viewController)
             }
         }
     }
 }
 
-#Preview {
-    SplashView()
-}
+ #Preview {
+     SplashView(router: ModalRouter())
+ }

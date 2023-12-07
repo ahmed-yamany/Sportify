@@ -8,28 +8,31 @@
 import SwiftUI
 
 struct SignupView: View {
+    let router: Router
+    
     @StateObject private var viewModel = SignupViewModel()
+    
     var body: some View {
-        OnboardingView(title: L10n.Signup.Header.title,
-                       subtitle: L10n.Signup.Header.subtitle,
-                       overlayTitle: L10n.Signup.Header.overlayTitle) {
-            
-            VStack(spacing: 32) {
-                form
+        GeometryReader { proxy in
+            OnboardingView(title: L10n.Signup.Header.title,
+                           subtitle: L10n.Signup.Header.subtitle,
+                           overlayTitle: L10n.Signup.Header.overlayTitle) {
                 
-                VStack(spacing: 24) {
-                    SPButton(title: L10n.Signup.title, type: .black) { }
-                    Text(L10n.Signup.Terms.instructions)
-                        .lineLimit(10)
-                        .multilineTextAlignment(.leading)
-                        .font(.regular)
-                        .foregroundStyle(Color.spTextSecondary)
-                        .frame(minHeight: 60)
+                VStack(spacing: 32) {
+                    form
+                    
+                    VStack(spacing: 24) {
+                        SPButton(title: L10n.Signup.title, type: .black) { }
+                        
+                        OnboardingInstructionsText(L10n.Signup.Terms.instructions)
+                        
+                        loginButton
+                    }
                 }
+                .padding(.top, 16)
+                .padding(.bottom, proxy.safeAreaInsets.bottom + 24)
             }
-            .padding(.vertical, 16)
         }
-        
     }
     
     private var form: some View {
@@ -78,8 +81,16 @@ struct SignupView: View {
             .font(.regular)
         }
     }
+    
+    private var loginButton: some View {
+        SPButton(title: L10n.Login.Header.overlayTitle, type: .gray) {
+            let loginView = LoginView(router: router)
+            let viewController = UIHostingController(rootView: loginView)
+            router.present(viewController)
+        }
+    }
 }
 
 #Preview {
-    SignupView()
+    SignupView(router: ModalRouter())
 }
