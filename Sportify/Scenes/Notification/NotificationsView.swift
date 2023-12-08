@@ -16,10 +16,12 @@ struct NotificationsView: View {
             Text("hello")
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(.spBackgroundSmoke)
         .toolbar {
             ToolbarItem(placement: .principal) {
                 Text("Notifications")
                     .font(.h2)
+                    .foregroundStyle(Color.spTextPrimary)
             }
         }
     }

@@ -15,6 +15,8 @@ struct ProfileView: View {
         VStack {
             
         }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(.spBackgroundSmoke)
     }
 }
 

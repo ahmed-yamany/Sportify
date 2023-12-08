@@ -35,3 +35,5 @@
 "signup.terms.privacy" = "Privacy Policy";
 "signup.terms.instructions" = "By agreeing to the above terms, you are consenting that your personal information will be collected, stored, and processed in the United States and the European Union on behalf of Sporify Properties, Inc.";
 
+//
+"home.search.title" = "Team, sport or venue";

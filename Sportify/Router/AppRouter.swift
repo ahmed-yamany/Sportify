@@ -7,24 +7,30 @@
 
 import UIKit
 import SwiftUI
+import Combine
 
 final class AppRouter: Router {
     public static let shared = AppRouter()
     
-    var authManager = AuthManager()
+    @ObservedObject var authManager = AuthManager()
+    var cancellable: AnyCancellable!
+    
     var window: UIWindow?
     var parentViewController: UIViewController?
     
-    private init() {}
+    private init() { }
     
     func makeWindow(from windowScene: UIWindowScene) {
         let window = UIWindow(windowScene: windowScene)
         window.makeKeyAndVisible()
         self.window = window
-        updateRootViewController()
+        
+        cancellable = AnyCancellable(authManager.$isLogin.sink { isLogin in
+            self.updateRootViewController(isLogin)
+        })
     }
     
-    func present(_ viewController: UIViewController, animated: Bool, completion: @escaping () -> Void) {
+    func present(_ viewController: UIViewController, animated: Bool = true, completion: @escaping () -> Void = {}) {
         guard let window else {
             debugPrint("App Router Window is nil")
             return
@@ -32,31 +38,25 @@ final class AppRouter: Router {
         window.rootViewController = viewController
     }
     
-    func dismiss(animated: Bool, completion: @escaping () -> Void) {
+    func dismiss(animated: Bool = true, completion: @escaping () -> Void = {}) {
         authManager.logout()
-        updateRootViewController()
     }
     
-    private func updateRootViewController() {
-        guard let window else {
-            debugPrint("App Router Window is nil")
-            return
-        }
-        
-        if authManager.isLogin() {
-            window.rootViewController = authViewController()
+    private func updateRootViewController(_ isLogin: Bool) {
+        if isLogin {
+            self.present(authViewController())
         } else {
-            window.rootViewController = notAuthViewController()
+            self.present(notAuthViewController())
         }
     }
     
-    private func authViewController() -> UIViewController? {
+    private func authViewController() -> UIViewController {
         UIHostingController(rootView: TabBarView(viewModel: TabBarViewModel()))
     }
     
-    private func notAuthViewController() -> UIViewController? {
+    private func notAuthViewController() -> UIViewController {
         let router = ModalRouter()
         router.parentViewController = UIHostingController(rootView: SplashView(router: router))
-        return router.parentViewController
+        return router.parentViewController ?? UIViewController()
     }
 }

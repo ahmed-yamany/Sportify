@@ -242,8 +242,8 @@
 			children = (
 				EE31F65A2B1F82610055E9BC /* OnboardingView.swift */,
 				EE92976A2B1F362F00877512 /* Splash */,
-				EE31F6552B1F70070055E9BC /* Signup */,
 				EE31F65C2B1F88C70055E9BC /* Login */,
+				EE31F6552B1F70070055E9BC /* Signup */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";

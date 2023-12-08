@@ -41,6 +41,12 @@ internal enum L10n {
     ///   Created by Ahmed Yamany on 05/12/2023.
     internal static let name = L10n.tr("Localizable", "app.name", fallback: "sportify")
   }
+  internal enum Home {
+    internal enum Search {
+      /// Team, sport or venue
+      internal static let title = L10n.tr("Localizable", "home.search.title", fallback: "Team, sport or venue")
+    }
+  }
   internal enum Signup {
     /// Create Account
     internal static let title = L10n.tr("Localizable", "signup.title", fallback: "Create Account")

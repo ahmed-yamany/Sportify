@@ -23,6 +23,7 @@ struct OnboardingView<Content: View>: View {
             }
             .ignoresSafeArea()
         }
+        .background(Color.spBackground)
     }
     
     func headerSection(proxy: GeometryProxy) -> some View {

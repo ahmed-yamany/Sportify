@@ -11,12 +11,24 @@ struct SPTextField: View {
     let title: String
     @Binding var text: String
     var secured: Bool = false
+    var icon: Image?
     
     var body: some View {
-        textfield
-            .frame(height: 48)
-            .padding(.horizontal)
-            .background(.spTextfieldBackground)
+        HStack {
+            if let icon {
+                icon
+                    .resizable()
+                    .frame(width: 16, height: 16)
+                    .padding(.trailing, 8)
+                    .foregroundStyle(Color.spTextSecondary)
+            }
+            
+            textfield
+        }
+        .frame(height: 48)
+        .padding(.horizontal)
+        .background(.spTextfieldBackground)
+        .foregroundStyle(Color.spTextPrimary)
     }
     
     private var textfield: some View {
@@ -35,5 +47,10 @@ struct SPTextField: View {
 }
 
 #Preview {
-    SPTextField(title: "First Name", text: .constant(""))
+    VStack {
+        SPTextField(title: "First Name", text: .constant(""), icon: Image(systemName: "magnifyingglass"))
+            .padding(.horizontal)
+    }
+    .frame(maxHeight: .infinity)
+    .background(.green)
 }

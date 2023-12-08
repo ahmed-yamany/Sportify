@@ -53,7 +53,7 @@ struct LoginView: View {
     
     private var signinButton: some View {
         SPButton(title: L10n.Login.Header.overlayTitle, type: .black) { 
-            router.dismiss()
+            AppRouter.shared.authManager.login()
         }
     }
     

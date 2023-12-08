@@ -12,15 +12,24 @@ struct HomeView: View {
     @StateObject private var viewModel = HomeViewModel()
     
     var body: some View {
-        VStack {
-        
+        ScrollView {
+            VStack {
+               searchTextField
+            }
+            .padding(.horizontal, .containerSpacing)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(.spBackgroundSmoke)
         .toolbar {
             ToolbarItem(placement: .navigation) { SPLogo() }
             ToolbarItem(placement: .topBarTrailing) { NotificationButton(router: router)}
         }
-        .background(Color.spBackgroundSmoke)
+    }
+    
+    var searchTextField: some View {
+        SPTextField(title: L10n.Home.Search.title.capitalized,
+                    text: $viewModel.searchQ,
+                    icon: Image(systemName: "magnifyingglass"))
     }
 }
 

@@ -7,11 +7,14 @@
 
 import Foundation
 
-class AuthManager {
-    func isLogin() -> Bool {
-        true
+class AuthManager: ObservableObject {
+    @Published var isLogin: Bool = false
+    
+    func login() {
+        isLogin = true
     }
+    
     func logout() {
-        
+        isLogin = false
     }
 }

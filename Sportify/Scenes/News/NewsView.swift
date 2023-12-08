@@ -15,6 +15,8 @@ struct NewsView: View {
         VStack {
             
         }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(.spBackgroundSmoke)
     }
 }
 

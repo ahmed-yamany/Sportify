@@ -15,6 +15,8 @@ struct HighlightsView: View {
         VStack {
             
         }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(.spBackgroundSmoke)
     }
 }
 
