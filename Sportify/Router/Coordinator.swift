@@ -27,12 +27,8 @@ class Coordinator {
         presentChild(currentchild, animated: animated, completion: completion)
     }
     
-     private func presentChild(_ child: UIViewController, animated: Bool, completion: @escaping () -> Void) {
-        if router.parentViewController == nil {
-            router.parentViewController = child
-        } else {
-            router.present(child, animated: animated, completion: completion)
-        }
+    private func presentChild(_ child: UIViewController, animated: Bool, completion: @escaping () -> Void) {
+        router.present(child, animated: animated, completion: completion)
     }
     
     func dismiss(animated: Bool = true, completion: @escaping () -> Void = {}) {

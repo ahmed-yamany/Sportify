@@ -9,7 +9,7 @@ import Foundation
 
 class AuthManager {
     func isLogin() -> Bool {
-        false
+        true
     }
     func logout() {
         

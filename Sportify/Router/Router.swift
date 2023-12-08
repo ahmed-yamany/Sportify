@@ -15,7 +15,7 @@ public protocol Router: AnyObject {
 
 public extension Router {
     func present(_ viewController: UIViewController, animated: Bool = true, completion: @escaping () -> Void = {}) {
-        present(viewController, animated: true, completion: completion)
+        present(viewController, animated: animated, completion: completion)
     }
     
     func dismiss(animated: Bool = true, completion: @escaping () -> Void = {}) {

@@ -14,6 +14,7 @@ class ModalRouter: Router {
     func present(_ viewController: UIViewController, animated: Bool = true, completion: @escaping () -> Void = {}) {
         guard parentViewController != nil else {
             debugPrint("Modal Router parentViewController is nil")
+            parentViewController = viewController
             return
         }
         viewController.modalPresentationStyle = .fullScreen
