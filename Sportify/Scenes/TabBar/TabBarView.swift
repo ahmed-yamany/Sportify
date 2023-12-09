@@ -13,7 +13,6 @@ struct TabBarView: View {
     
     var body: some View {
         ZStack(alignment: Alignment(horizontal: .center, vertical: .bottom)) {
-
             TabView(selection: $viewModel.selectedBar) {
                 ForEach(BarType.allCases, id: \.hashValue) { type in
                     type.view

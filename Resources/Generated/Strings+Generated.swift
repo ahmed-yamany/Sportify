@@ -46,6 +46,16 @@ internal enum L10n {
       /// Team, sport or venue
       internal static let title = L10n.tr("Localizable", "home.search.title", fallback: "Team, sport or venue")
     }
+    internal enum Section {
+      internal enum Button {
+        /// View all
+        internal static let title = L10n.tr("Localizable", "home.section.button.title", fallback: "View all")
+      }
+      internal enum Fifa {
+        /// Fifa World Cup
+        internal static let title = L10n.tr("Localizable", "home.section.fifa.title", fallback: "Fifa World Cup")
+      }
+    }
   }
   internal enum Signup {
     /// Create Account
