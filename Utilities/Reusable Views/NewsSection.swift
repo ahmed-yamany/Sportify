@@ -10,11 +10,13 @@ import Extensions
 
 struct NewsSection: View {
     let spNews: [SPNews]
+    let router: Router
     @State private var selectedSPNewsIndex: Int = 0
     
     var body: some View {
         VStack {
             newsSection
+            
             SPPaginationView(count: spNews.count, selectedIndex: selectedSPNewsIndex)
         }
         .animation(.easeIn, value: selectedSPNewsIndex)
@@ -25,7 +27,7 @@ struct NewsSection: View {
         TabView(selection: $selectedSPNewsIndex) {
             ForEach(spNews.indices, id: \.self) { index in
                 let news = spNews[index]
-                NewsCell(news: news)
+                NewsCell(news: news, router: router)
                     .tag(index)
             }
         }
@@ -35,11 +37,16 @@ struct NewsSection: View {
 
 private struct NewsCell: View {
     let news: SPNews
+    let router: Router
+    
+    @Namespace var namespace
+    
     var body: some View {
         ZStack(alignment: .bottomLeading) {
             Image(news.image)
                 .resizable()
                 .aspectRatio(contentMode: .fill)
+                .matchedGeometryEffect(id: news.hashValue, in: namespace)
             
             VStack(alignment: .leading, spacing: 8) {
                 
@@ -65,9 +72,14 @@ private struct NewsCell: View {
             .padding(.bottom, .containerSpacing)
         }
         .padding(.horizontal, .containerSpacing)
+        .onTapGesture {
+            let viewModel = NewsDetailsViewModel(news: news)
+            let controller = UIHostingController(rootView: NewsDetailsView(viewModel: viewModel))
+            router.present(controller)
+        }
     }
 }
 
 #Preview {
-    NewsSection(spNews: [])
+    NewsSection(spNews: [], router: ModalRouter())
 }

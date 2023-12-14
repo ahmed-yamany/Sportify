@@ -10,4 +10,6 @@ import UIKit
 extension CGFloat {
     static var screenSize: CGSize = UIScreen.main.bounds.size
     static var containerSpacing: CGFloat { 24 }
+    static var matchCellWidth: CGFloat { 158 }
+    
 }

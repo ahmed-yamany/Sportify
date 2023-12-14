@@ -40,7 +40,7 @@ enum BarType: String, CaseIterable, Hashable {
     }
     
     private func homeView() -> some View {
-        let router = NavigationRouter(navigationController: UINavigationController())
+        let router = NavigationRouter(navigationController: SPNavigationController())
         let controller = UIHostingController(rootView: HomeView(router: router))
         router.present(controller)
         return HostingView(controller: router.parentViewController ?? UIViewController())

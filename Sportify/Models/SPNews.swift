@@ -13,4 +13,6 @@ struct SPNews: Codable, Hashable, Identifiable {
     let image: String
     let category: SPCategory
     let type: String
+    let desctiption: String
+    var images: [String] = ["fifa-6", "fifa-7"]
 }

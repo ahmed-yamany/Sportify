@@ -10,7 +10,7 @@ import Extensions
 
 struct CategoriesSection: View {
     let categories: [SPCategory]
-    @Binding var selectedCategoryId: UUID
+    @Binding var selectedCategory: SPCategory
     @Namespace var animation
     
     var body: some View {
@@ -21,7 +21,7 @@ struct CategoriesSection: View {
                 }
             }
             .padding(.horizontal, .containerSpacing)
-            .animation(.easeInOut, value: selectedCategoryId)
+            .animation(.easeInOut, value: selectedCategory)
         }
         .frame(height: 36)
     }
@@ -35,14 +35,14 @@ struct CategoriesSection: View {
         .padding(.horizontal, 16)
         .frame(height: 36)
         .foregroundStyle(
-            selectedCategoryId == category.id ? .spBackground : .spTextPrimary
+            selectedCategory == category ? .spBackground : .spTextPrimary
         )
         .background(
-            selectedCategoryId == category.id ? .clear : .spBackground
+            selectedCategory == category ? .clear : .spBackground
         )
         .clipShape(SPShape())
         .background {
-            if selectedCategoryId == category.id {
+            if selectedCategory == category {
                 SPShape()
                     .matchedGeometryEffect(id: "category", in: animation)
                     .frame(height: 36)
@@ -50,11 +50,12 @@ struct CategoriesSection: View {
             }
         }
         .onTapGesture {
-            selectedCategoryId = category.id
+            selectedCategory = category
         }
     }
 }
 
 #Preview {
-    CategoriesSection(categories: [], selectedCategoryId: .constant(UUID()))
+    CategoriesSection(categories: [],
+                      selectedCategory: .constant(SPCategory(title: "", image: "")))
 }

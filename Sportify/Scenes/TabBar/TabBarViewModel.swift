@@ -8,5 +8,10 @@
 import SwiftUI
 
 class TabBarViewModel: ObservableObject {
+    static var shared = TabBarViewModel()
+    
     @Published var selectedBar: BarType = .home
+    @Published var isHidden: Bool = false
+    
+    private init() {}
 }

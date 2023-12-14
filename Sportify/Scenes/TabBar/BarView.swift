@@ -51,5 +51,5 @@ private struct BarButton: View {
 }
 
 #Preview {
-    BarView(viewModel: TabBarViewModel())
+    BarView(viewModel: TabBarViewModel.shared)
 }

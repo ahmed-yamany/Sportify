@@ -51,7 +51,7 @@ final class AppRouter: Router {
     }
     
     private func authViewController() -> UIViewController {
-        UIHostingController(rootView: TabBarView(viewModel: TabBarViewModel()))
+        UIHostingController(rootView: TabBarView(viewModel: TabBarViewModel.shared))
     }
     
     private func notAuthViewController() -> UIViewController {

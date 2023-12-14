@@ -22,8 +22,11 @@ struct TabBarView: View {
             }
 
             BarView(viewModel: viewModel)
+                .transition(.move(edge: .bottom))
+                .isHidden(viewModel.isHidden)
         }
         .animation(.easeInOut, value: viewModel.selectedBar)
+        .animation(.interactiveSpring, value: viewModel.isHidden)
         .onAppear {
             UITabBar.appearance().isHidden = true
         }
@@ -31,5 +34,5 @@ struct TabBarView: View {
 }
 
 #Preview {
-    TabBarView(viewModel: TabBarViewModel())
+    TabBarView(viewModel: TabBarViewModel.shared)
 }

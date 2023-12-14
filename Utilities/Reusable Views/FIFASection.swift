@@ -28,9 +28,8 @@ struct FIFASection: View {
                     FIFASectionCell(match: match)
                 }
             }
-            .padding(.leading, .containerSpacing)
+            .padding(.horizontal, .containerSpacing)
         }
-        .tabViewStyle(.page(indexDisplayMode: .never))
         .frame(height: 112)
     }
 }

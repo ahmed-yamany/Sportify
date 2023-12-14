@@ -55,6 +55,10 @@ internal enum L10n {
         /// Fifa World Cup
         internal static let title = L10n.tr("Localizable", "home.section.fifa.title", fallback: "Fifa World Cup")
       }
+      internal enum Leagues {
+        /// All Leagues
+        internal static let title = L10n.tr("Localizable", "home.section.leagues.title", fallback: "All Leagues")
+      }
     }
   }
   internal enum Signup {
