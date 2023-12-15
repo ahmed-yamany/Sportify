@@ -15,3 +15,8 @@ struct SPMatch: Codable, Hashable, Identifiable {
     let description: String
     let image: String
 }
+
+enum SPMatchType: String, CaseIterable, Hashable {
+    case upcoming = "Upcoming"
+    case past = "Past Matches"
+}

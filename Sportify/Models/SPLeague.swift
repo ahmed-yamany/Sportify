@@ -12,4 +12,5 @@ struct SPLeague: Hashable, Codable, Identifiable {
     
     let name: String
     let image: String
+    let category: SPCategory
 }

@@ -9,17 +9,19 @@ import SwiftUI
 
 struct LeaguesSection: View {
     let leagues: [SPLeague]
+    var title: Bool = true
     
     var body: some View {
         VStack {
-            SPSectionHeader(title: L10n.Home.Section.Leagues.title, action: {})
-                .padding(.horizontal, .containerSpacing)
-            
+            if title {
+                SPSectionHeader(title: L10n.Home.Section.Leagues.title, action: {})
+                    .padding(.horizontal, .containerSpacing)
+            }
             cells
         }
     }
     
-    var cells: some View {
+    private var cells: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack(spacing: 24) {
                 ForEach(leagues) { league in
@@ -28,6 +30,7 @@ struct LeaguesSection: View {
             }
             .padding(.horizontal, .containerSpacing)
         }
+        .frame(height: 138)
     }
 }
 
@@ -39,9 +42,12 @@ private struct LeagueCell: View {
             Rectangle()
                 .fill(.spTextfieldBackground)
                 .overlay {
-                    Image(league.image)
-                        .resizable()
-                        .frame(width: 48, height: 48)
+                    AsyncImage(url: URL(string: league.image)) {
+                        $0.image?
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                    }
+                    .frame(width: 48, height: 48)
                 }
                 .frame(height: 80)
             

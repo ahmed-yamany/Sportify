@@ -12,3 +12,9 @@ struct SPCategory: Codable, Identifiable, Hashable {
     let title: String
     let image: String
 }
+
+enum SPCategoryType: String, CaseIterable, Hashable {
+    case football
+    case basketball
+    case cricket
+}
