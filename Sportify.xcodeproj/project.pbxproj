@@ -17,6 +17,8 @@
 		EE31F6602B1F88E10055E9BC /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE31F65E2B1F88E10055E9BC /* LoginViewModel.swift */; };
 		EE3318F92B21FFCB004CE24F /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3318F82B21FFCB004CE24F /* Coordinator.swift */; };
 		EE545A8C2B2B2E7500304815 /* CategoryPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE545A8B2B2B2E7500304815 /* CategoryPicker.swift */; };
+		EE77ED0F2B2DAE56002267C6 /* LiveSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE77ED0E2B2DAE56002267C6 /* LiveSection.swift */; };
+		EE82D7EC2B2DB7940056FE7F /* MatchHiglightsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE82D7EB2B2DB7940056FE7F /* MatchHiglightsSection.swift */; };
 		EE92973E2B1F2A2A00877512 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE92973D2B1F2A2A00877512 /* AppDelegate.swift */; };
 		EE9297402B1F2A2A00877512 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE92973F2B1F2A2A00877512 /* SceneDelegate.swift */; };
 		EE9297472B1F2A2C00877512 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE9297462B1F2A2C00877512 /* Assets.xcassets */; };
@@ -95,6 +97,8 @@
 		EE31F65E2B1F88E10055E9BC /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		EE3318F82B21FFCB004CE24F /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		EE545A8B2B2B2E7500304815 /* CategoryPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPicker.swift; sourceTree = "<group>"; };
+		EE77ED0E2B2DAE56002267C6 /* LiveSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveSection.swift; sourceTree = "<group>"; };
+		EE82D7EB2B2DB7940056FE7F /* MatchHiglightsSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchHiglightsSection.swift; sourceTree = "<group>"; };
 		EE92973A2B1F2A2A00877512 /* Sportify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sportify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE92973D2B1F2A2A00877512 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE92973F2B1F2A2A00877512 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -444,6 +448,8 @@
 				EE9BF2972B24AAA900A7CBF2 /* FIFASection.swift */,
 				EE92F3512B29A5E7002DC81F /* LeaguesSection.swift */,
 				EE92F3552B29AEA5002DC81F /* FeaturedMatchesSection.swift */,
+				EE77ED0E2B2DAE56002267C6 /* LiveSection.swift */,
+				EE82D7EB2B2DB7940056FE7F /* MatchHiglightsSection.swift */,
 			);
 			path = "Reusable Views";
 			sourceTree = "<group>";
@@ -634,6 +640,7 @@
 				EE92F3602B29DE3D002DC81F /* SPNavigationController.swift in Sources */,
 				EE9297852B1F4A9400877512 /* SPLogo.swift in Sources */,
 				EE94EE2E2B233928005F4628 /* NewsViewModel.swift in Sources */,
+				EE82D7EC2B2DB7940056FE7F /* MatchHiglightsSection.swift in Sources */,
 				EEB535A62B20DFE900B158D6 /* NavigationRouter.swift in Sources */,
 				EE94EE322B23392F005F4628 /* HighlightsViewModel.swift in Sources */,
 				EE94EE2A2B233920005F4628 /* HomeViewModel.swift in Sources */,
@@ -641,6 +648,7 @@
 				EEA49AE22B2C846D0044CF05 /* PastFootballMatchesSection.swift in Sources */,
 				EEB535A12B20C38200B158D6 /* AuthManager.swift in Sources */,
 				EE9297732B1F378800877512 /* UIFont+Style.swift in Sources */,
+				EE77ED0F2B2DAE56002267C6 /* LiveSection.swift in Sources */,
 				EEB535982B2052D800B158D6 /* SPTextField.swift in Sources */,
 				EE9BF2932B2495F200A7CBF2 /* Rhombus.swift in Sources */,
 				EE94EE382B233BE2005F4628 /* BarView.swift in Sources */,
@@ -763,7 +771,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -821,7 +829,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;

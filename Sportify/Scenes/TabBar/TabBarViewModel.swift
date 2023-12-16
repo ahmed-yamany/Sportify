@@ -14,4 +14,9 @@ class TabBarViewModel: ObservableObject {
     @Published var isHidden: Bool = false
     
     private init() {}
+    
+    public func reset() {
+        selectedBar = .home
+        isHidden = false
+    }
 }

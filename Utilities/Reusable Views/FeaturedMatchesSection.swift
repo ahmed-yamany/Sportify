@@ -9,11 +9,12 @@ import SwiftUI
 
 struct FeaturedMatchesSection: View {
     let featuredMatches: [SPFeaturedMatch]
+    let title: String
     private let columns: [GridItem] = [GridItem(.adaptive(minimum: .matchCellWidth, maximum: .matchCellWidth  + 16))]
     
     var body: some View {
         VStack {
-            SPSectionHeader(title: "Popular Leagues")
+            SPSectionHeader(title: title)
                 .padding(.horizontal, .containerSpacing)
             
             cells
@@ -82,5 +83,5 @@ struct FeaturedMatchCell: View {
 }
 
 #Preview {
-    FeaturedMatchesSection(featuredMatches: [])
+    FeaturedMatchesSection(featuredMatches: [], title: "Popular Match")
 }

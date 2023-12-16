@@ -38,7 +38,7 @@ struct HomeView: View {
                 }
                 
                 if !featuredMatches.isEmpty {
-                    FeaturedMatchesSection(featuredMatches: featuredMatches)
+                    FeaturedMatchesSection(featuredMatches: featuredMatches, title: "Popular Leagues")
                 }
             }
             .padding(.bottom, 44)

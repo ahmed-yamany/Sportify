@@ -10,20 +10,29 @@ import SwiftUI
 struct OnboardingView<Content: View>: View {
     let title: String
     let subtitle: String
-    let overlayTitle: String
+    var overlayTitle: String = ""
+    var scrollable: Bool = true
     @ViewBuilder var content: () -> Content
     var body: some View {
         GeometryReader { proxy in
-            ScrollView {
-                SPContainerView {
-                    headerSection(proxy: proxy)
-                    Spacer()
-                    content()
+            if scrollable {
+                ScrollView {
+                    contentView(proxy: proxy)
                 }
+            } else {
+                contentView(proxy: proxy)
             }
-            .ignoresSafeArea()
         }
         .background(Color.spBackground)
+    }
+    
+    func contentView(proxy: GeometryProxy) -> some View {
+        SPContainerView {
+            headerSection(proxy: proxy)
+            Spacer()
+            content()
+        }
+        .ignoresSafeArea()
     }
     
     func headerSection(proxy: GeometryProxy) -> some View {

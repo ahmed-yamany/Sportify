@@ -26,8 +26,22 @@ struct SPButton: View {
         }
     }
     
+    enum SPButtonSize {
+        case large, small
+        
+        var height: CGFloat {
+            switch self {
+                case .large:
+                    48
+                case .small:
+                    24
+            }
+        }
+    }
+    
     let title: String
     var type: SPButtonType = .pink
+    var size: SPButtonSize = .large
     let action: () -> Void
     
     var body: some View {
@@ -40,7 +54,7 @@ struct SPButton: View {
                         .foregroundStyle(type.titleColor)
                 }
         }
-        .frame(height: 48)
+        .frame(height: size.height)
         .frame(maxWidth: .infinity)
     }
 }

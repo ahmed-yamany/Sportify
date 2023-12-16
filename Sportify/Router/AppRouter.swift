@@ -22,7 +22,7 @@ final class AppRouter: Router {
     
     func makeWindow(from windowScene: UIWindowScene) {
         let window = UIWindow(windowScene: windowScene)
-        window.makeKeyAndVisible()
+        
         self.window = window
         
         cancellable = AnyCancellable(authManager.$isLogin.sink { isLogin in
@@ -36,10 +36,12 @@ final class AppRouter: Router {
             return
         }
         window.rootViewController = viewController
+        window.makeKeyAndVisible()
     }
     
     func dismiss(animated: Bool = true, completion: @escaping () -> Void = {}) {
         authManager.logout()
+        TabBarViewModel.shared.reset()
     }
     
     private func updateRootViewController(_ isLogin: Bool) {
