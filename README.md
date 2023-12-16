@@ -14,3 +14,4 @@ in my previous challenges, I was focusing on UIKit but in this
   
 ##
 - [Video on Linkedin](https://www.linkedin.com/feed/update/urn:li:activity:7141782374727532544/)
+- [Design on Figma](https://www.figma.com/file/H1mxo17ck1kkMPf3K8cHpV/Sportify---Sports-streaming-app-(Community)?node-id=133%3A2973&mode=dev)
